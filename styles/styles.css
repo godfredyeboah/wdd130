@@ -46,7 +46,7 @@ aside {
     width: 20rem;
     margin: 1rem;
     border: 1px;
-    padding: 10px solid rgba(0, 0, 0, 0.2); /* 1 */
+    padding: 10px rgba(0, 0, 0, 0.2); /* 1 */
     background-color: #eee;
     color: rgb(61, 27, 3);
     text-align: center;
@@ -58,7 +58,7 @@ aside img {
 }
 
 footer {
-    margin-top: 15;
+    margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
 }
