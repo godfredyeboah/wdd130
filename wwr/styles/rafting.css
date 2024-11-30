@@ -20,7 +20,8 @@ body {
   header {
     background-color: var(--primary-color);
     color: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
@@ -36,7 +37,37 @@ body {
     margin: 0 10px;
     font-style: italic;
   }
+
+  .logo {
+    margin: 0 0.25rem 0 1rem;
+    width: 80px;
+    height: auto;
+}
+
+h1 {
+  font-size: 1.8em;
+  font-family: var(--heading-font);
+}
   
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
   .hero {
     position: relative;
     text-align: center;
@@ -74,6 +105,25 @@ body {
     margin: 0 0 10px 10px;
   }
   
+  .history {
+    padding: 20px;
+    background-color:  #d1cfd0;
+    text-align: center;
+}
+
+.history h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.history p {
+    font-size: 1.1em;
+    color: var(--accent1-color);
+    line-height: 1.6;
+}
+
+
   section {
     padding: 20px;
     text-align: center;
@@ -89,9 +139,53 @@ body {
     height: auto;
     margin-bottom: 10px;
   }
+
+  .adventure {
+    padding: 20px;
+    text-align: center;
+    background-color: #e9e2e2;
+}
+
+.adventure h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    background-color: #6cd0d0;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    padding: 5px;
+    background-color: antiquewhite;
+}
+
+figure {
+    flex: 1 0 calc(20% - 10px);
+    text-align: center;
+    margin: 0px;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+figcaption {
+    margin-top: 8px;
+    font-size: 1em;
+    color: #555;
+}
+
   
   footer {
-    background-color: var(--secondary-color);
+    background-color: #f98128;
     color: white;
     text-align: center;
     position: relative;
