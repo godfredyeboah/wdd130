@@ -8,7 +8,7 @@
     --paragraph-font: "Roboto", Garamond, 'Arrows';
 }
 
-
+/* About Us CSS */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -211,8 +211,206 @@ figcaption {
     font-size: 1em;
     color: #555;
 }
+/* About Us CSS ends here! */
 
-  
+
+
+/* Contact Us CSS */
+
+#contact {
+  background-color: #81a592;
+  padding: 50px 0;
+}
+
+#contact h1{
+  font-size: 2.5em;
+  color: #000;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.Company-Info {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Ensure text aligns to the left */
+    margin-bottom: 2rem; /* Add space below the section */
+}
+
+.Company-Info p {
+  color: #000;
+}
+
+.Company-Info, .employee-profiles, .comment-form {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+.map-container {
+  margin-top: 1rem;
+  text-align: center;
+  height: 400px;
+  width: 100%;
+}
+
+.map-container iframe {
+  display: inline-flex;
+  height: 400px;
+  width: 400px;
+}
+
+.employee {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.employee-profiles .employee {
+  width: 350px;
+  margin-bottom: 20px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 6%;
+}
+
+.employee img {
+  width: 100%;
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.employee-profiles {
+  margin-top: 5px;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #0e0707;
+}
+
+.employee-profiles p {
+  font-family: Garamond;
+}
+
+.comment-form {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.comment-form form {
+  display: grid; /* Use grid layout for alignment */
+  grid-template-columns: 1fr; /* Ensure fields stack */
+  gap: 1rem; /* Add spacing between elements */
+}
+
+
+.comment-form h2 {
+  text-align: center;
+}
+
+.comment-form input[type="submit"] {
+  padding: 10px 20px;
+  color: #6cd0d0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.comment-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.comment-form textarea {
+  resize: vertical;
+}
+
+.comment-form input[type="checkbox"]
+.comment-form input[type="radio"] {
+  vertical-align: middle;
+}
+
+.comment-form .purpose label,
+.comment-form input[type="checkbox"]+label,
+.comment-form input[type="radio"]+label {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.comment-form input[type="checkbox"] {
+  margin-right: 25px;
+}
+
+.comment-form button[type="submit"] {
+width: calc(101.5% - 22px);
+padding: 10px;
+background-color: var(--primary-color);
+color: #fff;
+font-size: 20px;
+border: none;
+border-radius: 15px;
+cursor: pointer;
+display: block;
+margin-top: 10px;
+}
+
+.comment-form button:hover {
+  background-color: #140201;
+}
+
+.newsletter {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.newsletter h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+.newsletter .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.newsletter form {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.newsletter .form-group {
+  margin-bottom: 20px;
+}
+
+.newsletter label {
+  display: block;
+  font-weight: bold;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--accent1-color);
+  border-radius: 5px;
+}
+/* Contact Us CSS ends here! */
+
   footer {
     background-color: #f98128;
     color: white;
@@ -225,7 +423,7 @@ figcaption {
     margin: 0;
     color: var(--accent1-color);
   }
-  
+
   footer .sociallinks {
     position: absolute;
     bottom: 10px;
@@ -237,3 +435,12 @@ figcaption {
     margin: 0 5px;
   }
   
+  /* Style for the wireframe link */
+footer .wireframe-link {
+    position: absolute;
+    bottom: 10px; /* Position near the bottom */
+    left: 10px; /* Position near the left edge */
+    font-size: 0.9em;
+    color: #333;
+    text-decoration: none;
+}
