@@ -44,6 +44,7 @@ body {
     height: auto;
 }
 
+
 h1 {
   font-size: 1.8em;
   font-family: var(--heading-font);
@@ -68,11 +69,7 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-  .hero {
-    position: relative;
-    text-align: center;
-  }
-  
+
   .hero img {
     width: 100%;
     height: auto;
@@ -87,6 +84,10 @@ nav ul li a:hover {
     font-family: var(--heading-font);
     color: white;
     font-size: 2.5rem;
+  }
+
+  .hero h2 {
+    color: var(--accent2-color);
   }
   
   .hero article {
@@ -411,9 +412,261 @@ margin-top: 10px;
 }
 /* Contact Us CSS ends here! */
 
+
+
+/* Home CSS begins from here */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero p{
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.hero-text p{
+  padding-top: 90%;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+
+.btn.btn:hover {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  font-family: var(--heading-font);
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-family: var(--paragraph-font);
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration:none ;
+  border-radius: 5px;
+  font-size: 1rem;
+  position: relative;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1a421a;
+  transform: translateY(-3px);
+}
+
+
+
+.content-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content {
+  padding: 50px 0;
+}
+
+.content h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.grid-item img {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 100px;
+}
+
+.grid-item p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo img {
+    margin-bottom: 20px;
+  }
+}
+
+form {
+  width: 650px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.1);
+  border-radius: 0.5rem;
+  display: grid;
+}
+
+.form-item {
+  display: grid;
+  align-items: center;
+}
+
+.form-itemcolumn2 {
+  grid-template-columns: 1fr 2fr;
+}
+
+.center {
+  text-align: center;
+}
+
+label {
+  text-align: left;
+  padding-left: 1rem;
+  font-size: large;
+}
+
+input, select, textarea {
+  padding: 0.5rem;
+  font-size: small;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Roboto', Arial, Helvetica;
+  color: var(--primary-color);
+}
+
+fieldset {
+  display: grid;
+  grid-gap: .5rem;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: 1rem;
+}
+
+label, input, button, select, textarea {
+  font-family: 'Roboto', sans-serif, Arial, Helvetica;
+}
+
+button {
+  margin: 1rem;
+  background-color: navy;
+  color: blanchedalmond;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+/* Home CSS ends here */
+
+
+/* Trip CSS starts from here */
+
+#trips {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+  color: #000;
+}
+
+.trip {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.trip img {
+  max-width: 40%;
+  height: auto;
+}
+
+.trip-details {
+  width: calc(60% - 20px);
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.trip-details h2 {
+  margin-bottom: 10px;
+}
+
+.trip-details p {
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.cta {
+  text-align: center;
+}
+
+.cta a {
+  background-color: #004794;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta a:hover {
+  background-color: #1A421A;
+}
+
+
+/* Trip CSS ends here */
   footer {
     background-color: #f98128;
-    color: white;
+    color: #000;
     text-align: center;
     position: relative;
     padding: 20px;
@@ -436,11 +689,7 @@ margin-top: 10px;
   }
   
   /* Style for the wireframe link */
-footer .wireframe-link {
-    position: absolute;
-    bottom: 10px; /* Position near the bottom */
-    left: 10px; /* Position near the left edge */
-    font-size: 0.9em;
-    color: #333;
-    text-decoration: none;
+ 
+a {
+  color: #5c0c0c;
 }
