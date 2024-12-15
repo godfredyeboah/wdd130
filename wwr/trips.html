@@ -10,7 +10,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bokor&family=Cormorant+Garamond&family=Edu+AU+VIC+WA+NT+Arrows&family=Edu+AU+VIC+WA+NT+Pre&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
-
+    <link rel="stylesheet" href="styles/table.css">
 </head>
 <body>
     <header>
@@ -28,41 +28,66 @@
         </nav>
      </header>   
      <main>
-        <section id="trips">
-            <div class="container">
-                <h1>Our Trips</h1>
-                <div class="trip">
+        <table>
+            <caption>
+                The Never Forgot Moments 
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Images</th>
+                <th scope="col">Our Trips</th>
+                <th scope="col">Trip Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><div class="trip">
                     <img src="images/rafting16_1024.jpg" alt="Trip 1">
-                    <div class="trip-details">
-                        <h2>Trip 1</h2>
-                        <p>Description of Trip 1</p>
-                        <p>Duration: 2 days</p>
-                        <p>Difficulty: Moderate</p>
-                    </div>
-                </div>
-                <div class="trip">
+                   </div>
+                </th>
+                <td>Trip 1</td>
+                <td><p>Description of Trip 1</p>
+                    <p>Duration: 2 days</p>
+                    <p>Difficulty: Moderate</p>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row"><div class="trip">
                     <img src="images/rafting27_1024.jpg" alt="Trip 2">
-                    <div class="trip-details">
-                        <h2>Trip 2</h2>
-                        <p>Description of Trip 2</p>
-                        <p>Duration: 3 days</p>
-                        <p>Difficulty: Challenging</p>
                     </div>
-                </div>
-                <div class="trip">
+                </th>
+                <td>Trip 2</td>
+                <td><p>Description of Trip 2</p>
+                    <p>Duration: 3 days</p>
+                    <p>Difficulty: Challenging</p>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row"><div class="trip">
                     <img src="images/rafting48_1024.jpg" alt="Trip 3">
-                    <div class="trip-details">
-                        <h2>Trip 3</h2>
-                        <p>Description of Trip 3</p>
-                        <p>Duration: 4 days</p>
-                        <p>Difficulty: Extreme</p>
                     </div>
-                </div>
-                <div class="cta">
-                    <a href="contact.html">Book Your Adventure</a>
-                </div>
-            </div>
-        </section>
+                </th>
+                <td>Trip 3</td>
+                <td> <p>Description of Trip 3</p>
+                    <p>Duration: 4 days</p>
+                    <p>Difficulty: Extreme</p></td>
+              </tr>
+
+              
+            </tbody>
+            <tfoot>
+              <tr>
+                <th scope="row" colspan="2"></th>
+                <td></td>
+              </tr>
+            </tfoot>
+          </table>
+          <div class="cta">
+            <a href="contact.html">Book Your Adventure Now</a>
+        </div>
+
     </main>
      <footer>
        <p> © 2024🎄Rafting Company| Godfred Opoku Yeboah 🎄</p>

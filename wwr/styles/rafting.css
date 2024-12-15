@@ -351,7 +351,7 @@ figcaption {
 }
 
 .comment-form input[type="checkbox"] {
-  margin-right: 25px;
+  margin-right: 20px;
 }
 
 .comment-form button[type="submit"] {
@@ -653,13 +653,14 @@ button:hover {
   background-color: #004794;
   color: #fff;
   padding: 15px 30px;
-  border-radius: 5px;
+  border-radius: 50px;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .cta a:hover {
   background-color: #1A421A;
+  
 }
 
 
